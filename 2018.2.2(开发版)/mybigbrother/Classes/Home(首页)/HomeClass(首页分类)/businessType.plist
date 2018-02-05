@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>包车服务</string>
+		<key>icon</key>
+		<string>sy_bcfw</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>危机处理</string>
+		<key>icon</key>
+		<string>sy_wj</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>管家服务</string>
+		<key>icon</key>
+		<string>sy_gj</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>学长帮忙</string>
+		<key>icon</key>
+		<string>sy_jz</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>入学定制</string>
+		<key>icon</key>
+		<string>sy_rx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>留学保险</string>
+		<key>icon</key>
+		<string>sy_bx</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>课程辅导</string>
+		<key>icon</key>
+		<string>sy_fd</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>海外房产</string>
+		<key>icon</key>
+		<string>sy_fc</string>
+	</dict>
+</array>
+</plist>

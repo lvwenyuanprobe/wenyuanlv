@@ -1,0 +1,26 @@
+platform :ios, '8.0'
+ target 'mybigbrother' do
+
+pod 'SDWebImage',   '~> 3.7.5'
+pod 'YTKNetwork',   '~> 2.0.0'
+pod 'MJRefresh',    '~> 3.1.0'
+pod 'SDAutoLayout', '~> 2.1.0'
+pod 'YYKit',        '~> 1.0.8'
+pod 'MJExtension',  '~> 3.0.10'
+
+pod 'SDCycleScrollView','~> 1.65'
+pod 'MBProgressHUD',    '~> 1.0.0'
+pod 'IQKeyboardManager','~> 3.2.3'
+pod 'LCActionSheet',    '~> 2.7.0'
+pod 'Masonry',          '~> 1.0.0'
+
+#高德定位SDK(注意:提交审核时IDFA选项,高德文档)
+pod 'AMapLocation'
+
+pod 'WebViewJavascriptBridge'
+pod 'Bugtags'
+
+#极光推送
+pod 'JPush'
+
+end

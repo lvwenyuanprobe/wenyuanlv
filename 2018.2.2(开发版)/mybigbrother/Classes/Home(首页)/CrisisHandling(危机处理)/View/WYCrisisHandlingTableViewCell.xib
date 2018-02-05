@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WYCrisisHandlingTableViewCell" id="KGk-i7-Jjw" customClass="WYCrisisHandlingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOA-G8-OlP">
+                        <rect key="frame" x="16" y="12" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NQO-xI-Jfs">
+                        <rect key="frame" x="75.5" y="0.0" width="224.5" height="43.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="DeR-Hn-ffP"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSA-7f-b64">
+                        <rect key="frame" x="251" y="6" width="49" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="请选择">
+                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="chooseSchoolTime:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xpq-ae-vte"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NOA-G8-OlP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AB6-9o-T4Q"/>
+                    <constraint firstItem="NQO-xI-Jfs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="APg-Xv-iH3"/>
+                    <constraint firstAttribute="trailing" secondItem="NQO-xI-Jfs" secondAttribute="trailing" constant="20" id="Er9-eI-acI"/>
+                    <constraint firstItem="rSA-7f-b64" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pze-p5-xWf"/>
+                    <constraint firstItem="NOA-G8-OlP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="d8L-ey-eOT"/>
+                    <constraint firstAttribute="trailing" secondItem="rSA-7f-b64" secondAttribute="trailing" constant="20" id="fdQ-Ib-Cv0"/>
+                    <constraint firstItem="NQO-xI-Jfs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g77-t3-HeY"/>
+                    <constraint firstItem="NQO-xI-Jfs" firstAttribute="leading" secondItem="NOA-G8-OlP" secondAttribute="trailing" constant="20" id="r4g-YN-j6P"/>
+                    <constraint firstAttribute="bottom" secondItem="NQO-xI-Jfs" secondAttribute="bottom" id="zsq-Qx-ZGF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="rightLable" destination="rSA-7f-b64" id="bNU-VZ-0FA"/>
+                <outlet property="textFile" destination="NQO-xI-Jfs" id="gsd-WJ-fVv"/>
+                <outlet property="titleLable" destination="NOA-G8-OlP" id="YJm-K3-AOM"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="-45"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WYCrisisHandlingTableViewCell" id="bTi-zl-gDd" customClass="WYCrisisHandlingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bTi-zl-gDd" id="pzN-Vn-aht">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I-20是否在有效期内" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="838-fc-xvA">
+                        <rect key="frame" x="16" y="12.5" width="145" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-lS-jh4">
+                        <rect key="frame" x="250" y="8" width="50" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="UBw-nJ-Dk4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="是" backgroundImage="gj_mr">
+                            <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="gj_xz"/>
+                        <connections>
+                            <action selector="chooseYES:" destination="bTi-zl-gDd" eventType="touchUpInside" id="bY7-dV-3OU"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydW-yt-rcp">
+                        <rect key="frame" x="180" y="9" width="50" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="nog-7a-vBB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="否" backgroundImage="gj_mr">
+                            <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="gj_xz"/>
+                        <connections>
+                            <action selector="chooseNO:" destination="bTi-zl-gDd" eventType="touchUpInside" id="Iy9-h3-Z04"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="838-fc-xvA" firstAttribute="centerY" secondItem="pzN-Vn-aht" secondAttribute="centerY" id="Lq6-dz-kwa"/>
+                    <constraint firstItem="c3W-lS-jh4" firstAttribute="centerY" secondItem="pzN-Vn-aht" secondAttribute="centerY" id="Omu-Jc-tdT"/>
+                    <constraint firstAttribute="trailing" secondItem="c3W-lS-jh4" secondAttribute="trailing" constant="20" id="SM3-tA-esV"/>
+                    <constraint firstItem="838-fc-xvA" firstAttribute="leading" secondItem="pzN-Vn-aht" secondAttribute="leading" constant="16" id="Xn7-Ik-fPT"/>
+                    <constraint firstItem="c3W-lS-jh4" firstAttribute="leading" secondItem="ydW-yt-rcp" secondAttribute="trailing" constant="20" id="cUo-93-rlz"/>
+                    <constraint firstItem="ydW-yt-rcp" firstAttribute="centerY" secondItem="pzN-Vn-aht" secondAttribute="centerY" id="ktY-8S-vdt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Reh-cc-q9h"/>
+            <connections>
+                <outlet property="NButton" destination="ydW-yt-rcp" id="uBE-RG-6gz"/>
+                <outlet property="YesButton" destination="c3W-lS-jh4" id="HBN-XK-V5G"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="45"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WYCrisisHandlingTableViewCell" id="oE8-aV-Oqy" customClass="WYCrisisHandlingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oE8-aV-Oqy" id="mPf-UV-u0R">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bts-Pc-VCU">
+                        <rect key="frame" x="16" y="12" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLM-se-TiL" customClass="UICheckBox">
+                        <rect key="frame" x="265" y="9" width="175" height="26"/>
+                        <color key="backgroundColor" red="1" green="0.40462903909999998" blue="0.35799319730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="R9U-WQ-DVj"/>
+                            <constraint firstAttribute="width" constant="175" id="hq8-qo-j65"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RLM-se-TiL" secondAttribute="trailing" constant="-120" id="Krz-0X-dcB"/>
+                    <constraint firstItem="bts-Pc-VCU" firstAttribute="leading" secondItem="mPf-UV-u0R" secondAttribute="leading" constant="16" id="OAP-em-R4Z"/>
+                    <constraint firstItem="RLM-se-TiL" firstAttribute="centerY" secondItem="mPf-UV-u0R" secondAttribute="centerY" id="gBW-ay-dRG"/>
+                    <constraint firstItem="bts-Pc-VCU" firstAttribute="centerY" secondItem="mPf-UV-u0R" secondAttribute="centerY" id="jmJ-9V-gYY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="IjA-0N-1yB"/>
+            <connections>
+                <outlet property="checkView" destination="RLM-se-TiL" id="4F3-fR-X4z"/>
+                <outlet property="titleLableSectionTwo" destination="bts-Pc-VCU" id="ldw-8i-79S"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="131"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WYCrisisHandlingTableViewCell" rowHeight="158" id="EN5-ah-j0x" customClass="WYCrisisHandlingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EN5-ah-j0x" id="PXM-7v-1wX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="157.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kRJ-JW-aQn">
+                        <rect key="frame" x="15" y="0.0" width="300" height="157.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="GZs-Qp-8ED"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kRJ-JW-aQn" firstAttribute="top" secondItem="PXM-7v-1wX" secondAttribute="top" id="CNu-SM-Eos"/>
+                    <constraint firstItem="kRJ-JW-aQn" firstAttribute="leading" secondItem="PXM-7v-1wX" secondAttribute="leading" constant="15" id="PiW-3S-VoO"/>
+                    <constraint firstAttribute="bottom" secondItem="kRJ-JW-aQn" secondAttribute="bottom" id="gkk-hs-o0u"/>
+                    <constraint firstAttribute="trailing" secondItem="kRJ-JW-aQn" secondAttribute="trailing" constant="5" id="iq6-YQ-2mE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="iLe-re-CcK"/>
+            <connections>
+                <outlet property="textView" destination="kRJ-JW-aQn" id="Uh6-DQ-e8S"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gj_mr" width="48" height="26"/>
+        <image name="gj_xz" width="48" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,114 @@
+//
+//  MBBrother.pch
+//  mybigbrother
+//
+//  Created by SN on 2017/3/30.
+//  Copyright © 2017年 思能教育咨询(大连)有限公司. All rights reserved.
+//
+
+#ifndef MBBrother_pch
+#define MBBrother_pch
+
+#pragma mark - 新接口 -
+/** 管家服务 */
+#define Butle_Service  @"http://dev.wbapi.worldbuddy.cn/api/butler/add"
+/** 危机处理 */
+#define Crisis_Handle  @"http://dev.wbapi.worldbuddy.cn/api/emergency/store"
+
+#pragma mark - 基础三方库
+/** 轮播图*/
+#import "SDCycleScrollView.h"
+
+/** 模型转换*/
+#import "MJExtension.h"
+
+/** YYWebImage*/
+#import "YYKit.h"
+
+/** 进度展示*/
+#import "MBProgressHUD.h"
+
+/** 网络请求工具类*/
+#import "YTKRequest.h"
+#import "AFNetworking.h"
+
+/** 刷新 */
+#import "MJRefresh.h"
+
+/** 布局类*/
+#import "SDAutoLayout.h"
+
+/** 键盘管理*/
+#import "IQKeyboardManager.h"
+
+/** 丝滑sheet*/
+#import "LCActionSheet.h"
+
+/** 布局类*/
+#import "Masonry.h"
+
+/** js交互*/
+#import "WebViewJavascriptBridge.h"
+
+/** Bugtags:bug管理*/
+#import <Bugtags/Bugtags.h>
+
+
+/** 高德地图*/
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+
+#pragma mark - 基础工具整合
+#import "MBBTools.h"
+#import "MBBNavigationController.h"
+
+#pragma mark - 网络请求管理类
+
+#import "MBBNetworkManager.h"
+
+#pragma mark - 接口整合
+
+#import "Header.h"
+
+#import "MBBRequstUrl.h"
+
+#import "JQFMDB.h"
+
+#import "BAAlert_OC.h"
+
+// 名校师兄筛选头文件
+#import "MMComBoBoxView.h"
+#import "MMComboBoxHeader.h"
+#import "MMAlternativeItem.h"
+#import "MMSelectedPath.h"
+#import "MMCombinationItem.h"
+#import "MMMultiItem.h"
+#import "MMSingleItem.h"
+
+// 自动消失的弹框
+#import "WYCustomAlter.h"
+
+
+//__weak
+#ifndef    weakify
+#if __has_feature(objc_arc)
+
+#define weakify( x ) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x; \
+_Pragma("clang diagnostic pop")
+
+#else
+
+#define weakify( x ) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+autoreleasepool{} __block __typeof__(x) __block_##x##__ = x; \
+_Pragma("clang diagnostic pop")
+
+#endif
+#endif
+
+#endif /* MBBrother_pch */

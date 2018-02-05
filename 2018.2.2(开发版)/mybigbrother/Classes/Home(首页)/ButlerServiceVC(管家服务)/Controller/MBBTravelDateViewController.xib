@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBBTravelDateViewController">
+            <connections>
+                <outlet property="tableVIewCity" destination="KdS-Kh-KRv" id="arx-N0-02X"/>
+                <outlet property="tableViewCountry" destination="3HR-mF-SXw" id="82R-TI-Cqt"/>
+                <outlet property="tableViewProvince" destination="m4P-ig-EQh" id="T98-mY-cj9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-mF-SXw">
+                    <rect key="frame" x="0.0" y="20" width="125" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lat-DR-2ld"/>
+                        <outlet property="delegate" destination="-1" id="KhG-eI-6dv"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m4P-ig-EQh">
+                    <rect key="frame" x="125" y="20" width="125" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Qk4-CV-ICS"/>
+                        <outlet property="delegate" destination="-1" id="eHY-mA-qKU"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KdS-Kh-KRv">
+                    <rect key="frame" x="250" y="20" width="125" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="b8y-hq-mqS"/>
+                        <outlet property="delegate" destination="-1" id="b4D-RA-NMb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="KdS-Kh-KRv" secondAttribute="bottom" id="0G9-CA-4nn"/>
+                <constraint firstItem="KdS-Kh-KRv" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="1CJ-9c-xfV"/>
+                <constraint firstItem="m4P-ig-EQh" firstAttribute="width" secondItem="3HR-mF-SXw" secondAttribute="width" id="Gb9-WA-0d0"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="KdS-Kh-KRv" secondAttribute="trailing" id="HAk-uF-uVE"/>
+                <constraint firstItem="KdS-Kh-KRv" firstAttribute="leading" secondItem="m4P-ig-EQh" secondAttribute="trailing" id="Kgz-FQ-iwb"/>
+                <constraint firstItem="m4P-ig-EQh" firstAttribute="leading" secondItem="3HR-mF-SXw" secondAttribute="trailing" id="Lfd-sR-6ng"/>
+                <constraint firstItem="3HR-mF-SXw" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="NQH-rV-bNe"/>
+                <constraint firstItem="3HR-mF-SXw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NWp-P0-gXC"/>
+                <constraint firstItem="KdS-Kh-KRv" firstAttribute="leading" secondItem="m4P-ig-EQh" secondAttribute="trailing" id="Ohn-8n-5Mp"/>
+                <constraint firstItem="m4P-ig-EQh" firstAttribute="leading" secondItem="3HR-mF-SXw" secondAttribute="trailing" id="RLh-at-3fo"/>
+                <constraint firstItem="m4P-ig-EQh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="RZz-pr-fG5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="m4P-ig-EQh" secondAttribute="bottom" id="kcS-uR-B3J"/>
+                <constraint firstItem="KdS-Kh-KRv" firstAttribute="width" secondItem="3HR-mF-SXw" secondAttribute="width" id="rP0-jW-cfv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="3HR-mF-SXw" secondAttribute="bottom" id="zel-UR-C4U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="139.5"/>
+        </view>
+    </objects>
+</document>
